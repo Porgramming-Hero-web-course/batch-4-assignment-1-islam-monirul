@@ -13,6 +13,7 @@
 		height: number;
 	};
 
+	// making union type for circle and rectangle
 	type CircleOrRectangle = Circle | Rectangle;
 
 	const calculateShapeArea = (customShape: CircleOrRectangle) => {

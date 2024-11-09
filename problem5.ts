@@ -6,6 +6,7 @@
 		givenObject: T,
 		propertyName: U
 	) => {
+		// returning the desired value of the property given
 		return givenObject[propertyName];
 	};
 

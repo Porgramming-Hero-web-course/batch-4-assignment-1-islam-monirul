@@ -12,6 +12,7 @@
 		profile: Profile,
 		partialUpdate: Partial<Profile>
 	) => {
+		// returning the updated profile object
 		return { ...profile, ...partialUpdate };
 	};
 

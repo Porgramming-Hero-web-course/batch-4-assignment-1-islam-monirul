@@ -1,6 +1,6 @@
 {
 	//
-	// Create a TypeScript function removeDuplicates that accepts an array of numbers and returns a new array with duplicates removed. Preserve the original order of elements.
+	/* Create a TypeScript function removeDuplicates that accepts an array of numbers and returns a new array with duplicates removed. Preserve the original order of elements. */
 
 	const removeDuplicates = (numArray: number[]): number[] => {
 		let currentElement: number, flag: number;
@@ -10,6 +10,7 @@
 			currentElement = numArray[i];
 			flag = 0;
 
+			// checking if the element is already in the array
 			for (let j: number = 0; j < noDuplicateArray.length; j++) {
 				if (currentElement === noDuplicateArray[j]) {
 					flag = 1;
@@ -17,6 +18,7 @@
 				}
 			}
 
+			// if the element is not present in the array, pushing the element to the array
 			if (flag === 0) noDuplicateArray.push(currentElement);
 		}
 

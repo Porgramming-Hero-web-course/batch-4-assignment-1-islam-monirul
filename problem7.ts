@@ -13,6 +13,7 @@
 			this.year = year;
 		}
 
+		// method for returning age of the given car
 		getCarAge(): number {
 			return new Date().getFullYear() - this.year;
 		}

@@ -6,6 +6,7 @@
 		const allWords: string[] = sentence.split(" ");
 		let count: number = 0;
 
+		// counting the occurences
 		allWords.forEach((w) => {
 			if (w === word) count++;
 		});
@@ -14,6 +15,5 @@
 	};
 
 	console.log(countWordOccurrences("I love typeScript", "typeScript"));
-
 	//
 }
