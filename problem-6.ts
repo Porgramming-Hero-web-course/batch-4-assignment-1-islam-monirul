@@ -6,9 +6,11 @@
 		email: string;
 	}
 
+	type PartialProfile = Partial<Profile>;
+
 	const updateProfile = (
 		profile: Profile,
-		partialUpdate: Partial<Profile>
+		partialUpdate: PartialProfile
 	) => {
 		// returning the updated profile object
 		return { ...profile, ...partialUpdate };

@@ -1,11 +1,12 @@
 {
 	//
 	const removeDuplicates = (numArray: number[]): number[] => {
-		let currentElement: number, flag: number;
+		let currentElement: number;
+		let flag: number = 0;
 		let noDuplicateArray: number[] = [];
 
 		for (let i: number = 0; i < numArray.length; i++) {
-			currentElement = numArray[i];
+			currentElement = numArray?.[i];
 			flag = 0;
 
 			// checking if the element is already in the array

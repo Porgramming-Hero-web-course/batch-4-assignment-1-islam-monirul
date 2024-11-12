@@ -14,6 +14,7 @@
 	// making union type for circle and rectangle
 	type CircleOrRectangle = Circle | Rectangle;
 
+	// function for calculating the area
 	const calculateShapeArea = (customShape: CircleOrRectangle) => {
 		if (customShape?.shape === "circle")
 			return (Math.PI * Math.pow(customShape?.radius, 2)).toFixed(2);

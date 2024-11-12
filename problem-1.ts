@@ -4,8 +4,7 @@
 		let sum: number = 0;
 
 		// adding numbers to sum
-		nums.forEach((n) => (sum += n));
-
+		nums.forEach((n: number): number => (sum += n));
 		return sum;
 	};
 

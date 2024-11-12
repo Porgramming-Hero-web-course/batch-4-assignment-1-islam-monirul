@@ -5,7 +5,7 @@
 		propertyName: U
 	) => {
 		// returning the desired value of the property given
-		return givenObject[propertyName];
+		return givenObject?.[propertyName];
 	};
 
 	const person = { name: "Alice", age: 30 };
